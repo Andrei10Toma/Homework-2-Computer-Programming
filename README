@@ -1,0 +1,25 @@
+	311CB Toma Andrei
+	-------DECLARATII-------
+
+	#define NR_MAX 100 - reprezinta lungimea pe care o vom folosi la siruri.
+	#define CATREN 4 - reprezinta numarul de catren al unei strofe.
+	De asemena, pe langa bibliotecile stdio.h, string.h, stdlib.h am inclus
+biblioteca ctype.h pentru a ma folosi de functiile predefinite isalpha(care determina daca un caracter este alfabetic), (is/to)upper(care determina daca un caracter este majuscula si transformarea acestuia in majuscula), (is/to)lower(care determina daca un caracter este litera mica si de asemenea transforma caracterele alfabetice in litere mici).
+
+	-------FUNCTII-------
+	Functia switch_word() - modifica un cuvant din poem.
+	Functia sort_alphabetically() - sorteaza alfabetic un sir de caractere.
+	Functia delete_whitespace() - elimina spatiile in plus din poem.
+	Functia uppercase (rezolvarea cerintei 1) - transforma prima litera din
+ fiecare vers in majuscula si dupa aceea restul literelor le transforma in litere mici. Cand ajunge la finalul versului schimba urmatorul caracter in majuscula si trece la urmatorul caracter.
+ 	Functia trimming (rezolvarea cerintei 2) - prima oara se sterg spatiile
+ in plus, iar dupa verifica daca e la sfarsitul strofei, caz in care trece mai departe pentru a nu sterge spatiul dintre strofe. Dupa transforma caracterle non-alfabetice de la sfarsitul versurilor in spatii si la sfarsit le sterge.
+ 	Functia silly (rezolvarea cerintei 3) - genereaza un numar random pentru
+ fiecare caracter alfabetic si dupa aceea daca numarul generat este mai mic decat o probabilitate citita de la tastatura si face transformarea majuscula<->minuscula.
+ 	Functia friendly (rezolvarea cerintei 4) - am creat o matrice de versuri
+ si o matrice de cuvinte si dupa aceea am obitnut diminutivele. Daca respectivul cuvant are diminutiv atunci se modifica versul in care acesta se afla. Dupa ce versurile sunt modificate acestea se introduc intr-o variabila auxiliara prin concatenari succesive pana se obtine noul poem cu diminutive.
+ 	Functia rhimy (rezolvare cerinta 5) - am creat o matrice de versuri si
+ o matrice de cuvinte, iar dupa aceea am extras ultimul cuvant din fiecare vers. Pentru cele patru versuri ale catrenului am extras ultimul caracter si pentru fiecare tip de rima am aplicat conditiile specifice (de ex: pentru rima imperecheata v1==v2 si v3==v4). Dupa aceea am obitnut sinonimele pe care le-am introdus intr-o matrice de sinonime si le-am orodnat lexicografic. Si dupa aceea in cazul in care cuvantul nu rima deja am inlocuit ultimul cuvant al versului cu un sinonim care rimeaza.
+ 	Functia print - afiseaza pe ecran poemul.
+ 	Functia main - am creat consola virtuala. Am retinut comanda pe care 
+ utilizatorul o da intr-o variabila req si dupa aceea am creaat fiecare comanda. 
